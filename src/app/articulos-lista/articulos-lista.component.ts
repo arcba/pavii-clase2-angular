@@ -7,11 +7,11 @@ import { ArticulosFamilias } from '../models/articulosfamilias-collection';
   templateUrl: './articulos-lista.component.html',
   styleUrls: ['./articulos-lista.component.css']
 })
-export class ArticulosListaComponent  implements OnInit {
+export class ArticulosListaComponent implements OnInit {
 
   listaArticulos: ArticuloFamilia[];
   verGrilla = false;
-  mensajeBoton = 'Mostrar Grilla';
+  mensajeBoton = 'Mostrar Grilla Articulos';
 
   constructor() { }
 
@@ -19,8 +19,8 @@ export class ArticulosListaComponent  implements OnInit {
     this.listaArticulos = ArticulosFamilias;
   }
 
-  MostrarOcultarGrilla(){
-    this.mensajeBoton = this.verGrilla?'Mostrar grilla':'Ocultar';
+  MostrarOcultarGrilla() {
+    this.mensajeBoton = this.verGrilla ? 'Mostrar grilla' : 'Ocultar';
     this.verGrilla = !this.verGrilla;
   }
 
